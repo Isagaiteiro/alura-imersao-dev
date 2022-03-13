@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+    <style>
+        p {
+            text-align: center;
+            font-size: 50px;
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        //array, é utilizado para a criação de listas no JS ele é definido por tudo que tem entre []
+        var catalogo = ["The Greatest Showman", "Homem Aranha: Longe de Casa", "Moana"]
+        catalogo.push("Harry Potter 1");
+        //comando push acrescenta novo elemento no array
+
+        catalogo.push("Harry Potter 2");
+        catalogo.push("Harry Potter 3");
+
+
+        //Quando não tem nenhuma tag para chamar no html é possível imprimir informações na tela com document.write, esse comando escreve diretamente na tela as informações passadas
+        //document.write("<p>" + filme1 + "</p>");
+        //Como não tem nenhuma tag criada para referenciar, é necessário criar um novo elemento, para isso dentro dos requisitos do document.write, é necessário abrir e fechar a tag html que quer escrever dentro, podendendo ser a tag <p>,<h1>,<strong> e etc...
+
+        //chama todos os elementos da lista juntos
+        //document.write ("<p>" + catalogo + "</p>");
+
+        //É possivel chamar cada elemento da lista separado usando o índice, dessa forma cada elemento da lista fica um embaixo do outro.
+        //document.write("<p>" + catalogo[0] + "</p>");
+        //document.write("<p>" + catalogo[1] + "</p>");
+        //document.write("<p>" + catalogo[2] + "</p>");
+        //document.write("<p>" + catalogo[3] + "</p>");
+
+        //for é um laço, um loop, diferente do if que é só uma vez. Porisso deve declarar os paramentros que ele deve repetir, o guia principal é o do meio, primeiro, ele vai para o "miolo" do laço para, depois, voltar ao indice = indice +1 e para a verificação, buscando saber se deve ou não executar mais uma iteração. Quando temos um laço, chamamos de iteração
+        //     valor inicial          condição         expressão final
+         for (var indice = 0; indice < catalogo.length; indice++) {
+            //document.write("<p>" + indice + "</p>");
+            document.write("<p>" + catalogo[indice] + "</p>");
+        }
+    </script>
+</body>
+
+</html>

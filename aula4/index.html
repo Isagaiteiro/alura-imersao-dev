@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aluraflix</title>
+    <style>
+        body {
+            font-family: "Roboto Mono", monospace;
+            text-align: center;
+            background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-04-aluraflix-e-filmes.png");
+            background-color: #000000;
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .page-title {
+            color: #ffffff;
+            margin: 0 0 5px;
+        }
+
+        .page-subtitle {
+            color: #ffffff;
+            margin-top: 5px;
+        }
+
+        .page-logo {
+            width: 200px;
+        }
+
+        .alura-logo {
+            width: 40px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        body>img {
+            margin: 0 10px;
+        }
+
+        img {
+            max-height: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="page-title">
+            Aluraflix
+        </h1>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo"
+            alt="">
+    </div>
+    <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    </a>
+    <script>
+        var listaFilmes = ["https://kbimages1-a.akamaihd.net/5cb87f61-9ef9-43b0-b370-4e41fd2a1624/1200/1200/False/a-million-dreams-from-the-greatest-showman-cello-with-piano-accompaniment-sheet-music.jpg" , "https://upload.wikimedia.org/wikipedia/pt/thumb/0/04/Spider-man-far-from-home-poster.jpg/250px-Spider-man-far-from-home-poster.jpg" , "http://pm1.narvii.com/6818/5ddc250a152d103910eb197397329de9d1950ad6v2_00.jpg" , "https://diariodovale.com.br/wp-content/uploads/2021/11/HarryPotter1.jpg" , "https://cabanascubas.com.br/product_images/i/838/Herry_potter_e_a_camara_secreta__87260_zoom.jpg" ,"https://br.web.img2.acsta.net/medias/nmedia/18/93/88/04/20282944.jpg"]
+
+        for (var indice = 0; indice < listaFilmes.length; indice++) {
+            document.write("<img src= " + listaFilmes[indice] + ">" )
+        }
+    </script>
+</body>
+
+</html>
